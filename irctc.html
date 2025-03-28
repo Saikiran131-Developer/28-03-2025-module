@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        input {
+            padding: 10px;
+            margin: 4px;
+            width: 100%;
+        }
+        .error {
+            border: 2px solid red;
+        }
+        .message {
+            color: red;
+            font-size: 12px;
+        }
+        body {
+            background-color: lightblue;
+            
+        }
+        .form-container {
+            width: 300px;
+            
+        }
+        marquee{
+            color: blue;
+            font-size: 2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <marquee>Welcome to KIRAN'S IRCTTC registration page</marquee>
+        <form id="form" action="./signupsuccess.html">
+            <input type="text" placeholder="User Name" id="username" onblur="validateForm('form', 'username', 'password')"><br>
+            <div id="usernameWarning" class="message"></div>
+            <br>
+
+            <input type="text" placeholder="Full Name" id="fullname" onblur="validateForm('form', 'username', 'password')"><br>
+            <div id="fullnameWarning" class="message"></div>
+            <br>
+
+            <input type="password" placeholder="Password" id="password" onblur="validateForm('form', 'username', 'password')"><br>
+            <div id="passwordWarning" class="message"></div>
+            <br>
+
+            <input type="password" placeholder="Confirm Password" id="confirmpassword" onblur="validateForm('form', 'username', 'password')"><br>
+            <div id="confirmPasswordWarning" class="message"></div>
+            <br>
+
+            <input type="submit" value="Submit"><br><br>
+        </form>
+    </div>
+
+    <script type="module" src="./modules.js"></script>
+    <script type="module" src="./index.js"></script>
+
+</body>
+</html>
